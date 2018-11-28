@@ -1,0 +1,1008 @@
+buty_wysokie:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraca
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+or_buty_wysokie:
+  gdzie:
+   - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+   - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+   - zawsze
+  start_h:
+   - zawsze
+buty_niskie:
+  gdzie:
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+  opady:
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraca
+    - cieplo
+    - chlodno
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+kurtka_lekka:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+  opady:
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraca
+    - cieplo
+    - chlodno
+  snieg:
+   - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+   - zawsze
+  szlak_h:
+   - zawsze
+  start_h:
+   - zawsze
+kurtka_zimowa:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+odziez_termiczna:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+polar_bluza:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraca
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+rekawiczki:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+bandana:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+lina:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+uprzaz:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+kask:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+magnezja:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+karabinki:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+bloczki:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+haki:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+petle:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+latarka:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - szlak_h + start_h
+  start_h:
+    - szlak_h + start_h
+czolowka:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - szlak_h + start_h
+  start_h:
+    - szlak_h + start_h
+spiwor:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - nie
+  szlak_h:
+    - szlak_h + start_h
+  start_h:
+    - szlak_h + start_h
+kije_trekingowe:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - nie
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+mapa:
+  - zawsze
+saperka:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - 3
+    - 4
+    - 5
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+nozyk:
+  - zawsze
+raki:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+czekan:
+  gdzie:
+    - turnie
+    - pietro_hal
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - lato
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - goraco
+    - cieplo
+    - chlodno
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - tak
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+or_czekan:
+  gdzie:
+    - turnie
+    - pietro_hal
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - 2
+    - 3
+    - 4
+    - 5
+  wspinaczka:
+    - nie
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+okulary:
+  - zawsze
+rakiety_sniezne:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - 4
+    - 5
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+ogrzewacz:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+    - regiel_dolny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - zawsze
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
+detektor_lawinowy:
+  gdzie:
+    - turnie
+    - pietro_hal
+    - pietro_kosodrzewiny
+    - regiel_gorny
+  region:
+    - zachodnie
+    - wysokie
+    - bielskie
+  pora_roku:
+    - wiosna
+    - jesien
+    - zima
+  opady:
+    - snieg
+    - deszcz
+    - mgla
+    - brak
+  temperatura:
+    - zimno
+    - bardzo_zimno
+    - lodowato
+  snieg:
+    - zawsze
+  st_lawinowy:
+    - 2
+    - 3
+    - 4
+    - 5
+  wspinaczka:
+    - zawsze
+  szlak_h:
+    - zawsze
+  start_h:
+    - zawsze
