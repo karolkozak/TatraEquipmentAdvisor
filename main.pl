@@ -291,7 +291,6 @@ fakty(X,Y) :- xfakty(X,Y).
 fakty_alternatywa(X,A,B) :- (fakty(X,A); fakty(X,B)).
 fakty_alternatywa(X,A,B,C) :- (fakty(X,A); fakty(X,B); fakty(X,C)).
 fakty_alternatywa(X,A,B,C,D) :- (fakty(X,A); fakty(X,B); fakty(X,C); fakty(X,D)).
-fakty_alternatywa(X,A,B,C,D,E) :- (fakty(X,A); fakty(X,B); fakty(X,C); fakty(X,D); fakty(X,E)).
 
 pamietaj(X,Y) :- assertz(xfakty(X,Y)).
 pamietaj_temperature(X) :- ((between(30,100,X) ->  assertz(xfakty(temperatura, goraco)));
@@ -326,10 +325,19 @@ co_zabrac() :-
 co_zabrac() :- write('Nie jestem w stanie odgadnac co masz zabrac w gory.'),
             wyczysc_pamiec.
 
-test() :-
-    pamietaj(pora_roku, zima),
-    pamietaj(region, wysokie),
-    pamietaj_temperature(2),
-    pamietaj_start(10),
-    pamietaj_trase(7),
+/* cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
+ * godzina wymarszu, czas trwania */
+wykonaj(A, B, C, D, E, F, G, H, I, J) :-
+    pamietaj(cel_wyprawy, A),
+    pamietaj(region, B),
+    pamietaj(pora_roku, C),
+    pamietaj(opady, D),
+    pamietaj_temperature(E),
+    pamietaj(snieg, F),
+    pamietaj(st_lawinowy, G),
+    pamietaj(wspinaczka, H),
+    pamietaj_start(I),
+    pamietaj_trase(J),
     co_zabrac.
+
+test() :- wykonaj(turnie, wysokie, zima, brak, 10, 0, 0, nie, 8, 9).
