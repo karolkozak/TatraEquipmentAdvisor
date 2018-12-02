@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 @Component
-public class SummaryController extends SceneSwitcherable implements Initializable {
+public class SummaryController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button getResultButton;

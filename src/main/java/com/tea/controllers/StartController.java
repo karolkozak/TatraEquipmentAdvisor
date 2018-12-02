@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class StartController extends SceneSwitcherable implements Initializable {
+public class StartController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button startButton;

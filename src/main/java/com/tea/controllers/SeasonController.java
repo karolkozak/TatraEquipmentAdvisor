@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class SeasonController extends SceneSwitcherable implements Initializable {
+public class SeasonController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -32,9 +32,14 @@ public class SeasonController extends SceneSwitcherable implements Initializable
     @FXML
     public void handleSeasonAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "temperature");
+    }
+
+    @Override
+    protected void getValueFromView() {
         RadioButton selectedRadioButton = (RadioButton) season.getSelectedToggle();
         String selectedValue = selectedRadioButton.getText();
         tripDataService.getTripData().setSeason(selectedValue);
-        nextScene(actionEvent, "temperature");
     }
 }

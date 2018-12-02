@@ -25,8 +25,8 @@
                 <ToggleGroup fx:id="climbing"/>
             </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="climbingFalse" layoutX="55.0" layoutY="183.0" mnemonicParsing="false" text="nie"
-                     toggleGroup="$climbing"/>
+        <RadioButton fx:id="climbingFalse" layoutX="55.0" layoutY="183.0" mnemonicParsing="false" selected="true"
+                     text="nie" toggleGroup="$climbing"/>
         <Button id="next" fx:id="nextButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false"
                 onAction="#handleClimbingAction" text="Dalej"/>
         <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">

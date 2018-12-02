@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class TrailwayDurationController extends SceneSwitcherable implements Initializable {
+public class TrailwayDurationController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -31,8 +31,13 @@ public class TrailwayDurationController extends SceneSwitcherable implements Ini
     @FXML
     public void handleTrailwayDurationAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "climbing");
+    }
+
+    @Override
+    protected void getValueFromView() {
         Integer value = (new Double(trailwayDuration.getValue())).intValue();
         tripDataService.getTripData().setTrailwayDuration(value);
-        nextScene(actionEvent, "climbing");
     }
 }

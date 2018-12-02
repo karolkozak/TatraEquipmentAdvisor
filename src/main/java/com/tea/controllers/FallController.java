@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class FallController extends SceneSwitcherable implements Initializable {
+public class FallController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -32,9 +32,14 @@ public class FallController extends SceneSwitcherable implements Initializable {
     @FXML
     public void handleFallAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "snowAmount");
+    }
+
+    @Override
+    protected void getValueFromView() {
         RadioButton selectedRadioButton = (RadioButton) fall.getSelectedToggle();
         String selectedValue = selectedRadioButton.getText();
         tripDataService.getTripData().setFall(selectedValue);
-        nextScene(actionEvent, "snowAmount");
     }
 }

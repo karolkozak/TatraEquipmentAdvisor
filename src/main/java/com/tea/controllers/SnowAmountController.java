@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class SnowAmountController extends SceneSwitcherable implements Initializable {
+public class SnowAmountController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -31,8 +31,13 @@ public class SnowAmountController extends SceneSwitcherable implements Initializ
     @FXML
     public void handleSnowAmountAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "degreeOfAvalanche");
+    }
+
+    @Override
+    protected void getValueFromView() {
         Integer value = (new Double(snowAmount.getValue())).intValue();
         tripDataService.getTripData().setSnowAmount(value);
-        nextScene(actionEvent, "degreeOfAvalanche");
     }
 }

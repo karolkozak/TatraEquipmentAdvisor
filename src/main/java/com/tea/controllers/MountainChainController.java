@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class MountainChainController extends SceneSwitcherable implements Initializable {
+public class MountainChainController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -32,9 +32,14 @@ public class MountainChainController extends SceneSwitcherable implements Initia
     @FXML
     public void handleChainAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "mountainLevel");
+    }
+
+    @Override
+    protected void getValueFromView() {
         RadioButton selectedRadioButton = (RadioButton) mountainChain.getSelectedToggle();
         String selectedValue = selectedRadioButton.getText();
         tripDataService.getTripData().setMountainChain(selectedValue);
-        nextScene(actionEvent, "mountainLevel");
     }
 }

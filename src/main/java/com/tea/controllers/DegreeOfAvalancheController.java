@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class DegreeOfAvalancheController extends SceneSwitcherable implements Initializable {
+public class DegreeOfAvalancheController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -31,8 +31,13 @@ public class DegreeOfAvalancheController extends SceneSwitcherable implements In
     @FXML
     public void handleDegreeOfAvalancheAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "startHour");
+    }
+
+    @Override
+    protected void getValueFromView() {
         Integer value = (new Double(degreeOfAvalanche.getValue())).intValue();
         tripDataService.getTripData().setDegreeOfAvalanche(value);
-        nextScene(actionEvent, "startHour");
     }
 }

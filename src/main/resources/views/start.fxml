@@ -5,17 +5,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.StartController">
-   <children>
-      <Label alignment="CENTER" layoutX="158.0" layoutY="134.0" prefHeight="17.0" prefWidth="285.0" text="TEA">
-         <font>
-            <Font name="System Bold" size="36.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="199.0" layoutY="200.0" prefHeight="17.0" prefWidth="202.0" text="Tatra Equipment Advisor">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Button id="start" fx:id="startButton" layoutX="274.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleStartAction" text="Start" />
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.StartController">
+    <children>
+        <Label alignment="CENTER" layoutX="158.0" layoutY="134.0" prefHeight="17.0" prefWidth="285.0" text="TEA">
+            <font>
+                <Font name="System Bold" size="36.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="199.0" layoutY="200.0" prefHeight="17.0" prefWidth="202.0"
+               text="Tatra Equipment Advisor">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button id="start" fx:id="startButton" layoutX="274.0" layoutY="265.0" mnemonicParsing="false"
+                onAction="#handleStartAction" text="Start"/>
+    </children>
 </AnchorPane>

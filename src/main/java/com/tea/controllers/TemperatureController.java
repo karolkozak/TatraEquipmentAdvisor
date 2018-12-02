@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class TemperatureController extends SceneSwitcherable implements Initializable {
+public class TemperatureController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -31,8 +31,13 @@ public class TemperatureController extends SceneSwitcherable implements Initiali
     @FXML
     public void handleTemperatureAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "fall");
+    }
+
+    @Override
+    protected void getValueFromView() {
         Integer value = (new Double(temperature.getValue())).intValue();
         tripDataService.getTripData().setTemperature(value);
-        nextScene(actionEvent, "fall");
     }
 }

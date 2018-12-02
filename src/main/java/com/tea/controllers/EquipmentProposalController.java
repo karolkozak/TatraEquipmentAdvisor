@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class EquipmentProposalController extends SceneSwitcherable implements Initializable {
+public class EquipmentProposalController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button startAgain;

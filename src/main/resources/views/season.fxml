@@ -16,7 +16,7 @@
                 <Font size="14.0"/>
             </font>
         </Label>
-        <RadioButton layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="wiosna">
+        <RadioButton layoutX="55.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="wiosna">
             <toggleGroup>
                 <ToggleGroup fx:id="season"/>
             </toggleGroup>

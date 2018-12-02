@@ -27,7 +27,7 @@
         </RadioButton>
         <RadioButton layoutX="55.0" layoutY="183.0" mnemonicParsing="false" text="deszcz" toggleGroup="$fall"/>
         <RadioButton layoutX="55.0" layoutY="224.0" mnemonicParsing="false" text="śnieg" toggleGroup="$fall"/>
-        <RadioButton layoutX="55.0" layoutY="265.0" mnemonicParsing="false" text="brak" toggleGroup="$fall"/>
+        <RadioButton layoutX="55.0" layoutY="265.0" mnemonicParsing="false" text="brak" selected="true" toggleGroup="$fall"/>
         <Button id="next" fx:id="nextButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false"
                 onAction="#handleFallAction" text="Dalej"/>
         <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">

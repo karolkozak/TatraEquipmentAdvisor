@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class StartHourController extends SceneSwitcherable implements Initializable {
+public class StartHourController extends AbstractSceneController implements Initializable {
 
     @FXML
     private Button nextButton;
@@ -31,8 +31,13 @@ public class StartHourController extends SceneSwitcherable implements Initializa
     @FXML
     public void handleStartHourAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        getValueFromView();
+        nextScene(actionEvent, "trailwayDuration");
+    }
+
+    @Override
+    protected void getValueFromView() {
         Integer value = (new Double(startHour.getValue())).intValue();
         tripDataService.getTripData().setStartHour(value);
-        nextScene(actionEvent, "trailwayDuration");
     }
 }

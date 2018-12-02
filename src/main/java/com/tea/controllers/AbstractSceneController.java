@@ -13,11 +13,11 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component
-public abstract class SceneSwitcherable {
+public abstract class AbstractSceneController {
     @Autowired
     ConfigurableApplicationContext context;
 
-    public void nextScene(ActionEvent actionEvent, String view) throws IOException {
+    protected void nextScene(ActionEvent actionEvent, String view) throws IOException {
         String viewPath = new StringBuilder()
                 .append("../../../views/")
                 .append(view)
@@ -30,5 +30,8 @@ public abstract class SceneSwitcherable {
         Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         app_stage.setScene(home_page);
         app_stage.show();
+    }
+
+    protected void getValueFromView() {
     }
 }
