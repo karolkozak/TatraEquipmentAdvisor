@@ -21,13 +21,13 @@ public class App extends Application {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(App.class);
         context = builder.run(getParameters().getRaw().toArray(new String[0]));
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../views/climbing.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../views/start.fxml"));
         loader.setControllerFactory(context::getBean);
         root = loader.load();
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("TEA - Tatra Equipment Advisor");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();

@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.MountainChainController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.DegreeOfAvalancheController">
     <children>
         <Label layoutX="25.0" layoutY="28.0" text="TEA">
             <font>
                 <Font name="System Bold" size="24.0"/>
             </font>
         </Label>
-        <Label layoutX="33.0" layoutY="105.0" text="Wybierz region Tatr:">
+        <Label layoutX="33.0" layoutY="105.0" text="Stopień zagrożenia lawinowego:">
             <font>
                 <Font size="14.0"/>
             </font>
         </Label>
-        <RadioButton layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="zachodnie">
-            <toggleGroup>
-                <ToggleGroup fx:id="mountainChain"/>
-            </toggleGroup>
-        </RadioButton>
-        <RadioButton layoutX="55.0" layoutY="183.0" mnemonicParsing="false" text="wysokie"
-                     toggleGroup="$mountainChain"/>
-        <RadioButton layoutX="55.0" layoutY="224.0" mnemonicParsing="false" text="bielskie"
-                     toggleGroup="$mountainChain"/>
+        <Slider id="degreeOfAvalanche" fx:id="degreeOfAvalanche" blockIncrement="0.0" layoutX="47.0" layoutY="147.0"
+                majorTickUnit="1.0" max="5.0" minorTickCount="1" prefHeight="14.0" prefWidth="369.0"
+                showTickLabels="true" showTickMarks="true"/>
         <Button id="next" fx:id="nextButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false"
-                onAction="#handleChainAction" text="Dalej"/>
+                onAction="#handleDegreeOfAvalancheAction" text="Dalej"/>
         <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">
             <font>
                 <Font size="9.0"/>

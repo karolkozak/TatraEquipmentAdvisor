@@ -34,12 +34,7 @@ public class ClimbingController extends SceneSwitcherable implements Initializab
         nextButton.setDisable(true);
         RadioButton selectedRadioButton = (RadioButton) climbing.getSelectedToggle();
         String selectedValue = selectedRadioButton.getText();
-        if (selectedValue.equals("tak")) {
-            System.out.println("nene");
-            tripDataService.setClimbing(true);
-        } else {
-            tripDataService.setClimbing(false);
-        }
+        tripDataService.getTripData().setClimbing(selectedValue);
         nextScene(actionEvent, "summary");
     }
 }

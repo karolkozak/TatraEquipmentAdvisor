@@ -11,8 +11,4 @@ public class TripDataService {
     public TripData getTripData() {
         return tripData;
     }
-
-    public void setClimbing(boolean climbing) {
-        tripData.setClimbing(climbing);
-    }
 }

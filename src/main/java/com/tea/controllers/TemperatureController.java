@@ -1,9 +1,12 @@
 package com.tea.controllers;
 
+import com.tea.services.TripDataService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -15,6 +18,10 @@ public class TemperatureController extends SceneSwitcherable implements Initiali
 
     @FXML
     private Button nextButton;
+    @FXML
+    private Slider temperature;
+    @Autowired
+    private TripDataService tripDataService;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -24,6 +31,8 @@ public class TemperatureController extends SceneSwitcherable implements Initiali
     @FXML
     public void handleTemperatureAction(ActionEvent actionEvent) throws IOException {
         nextButton.setDisable(true);
+        Integer value = (new Double(temperature.getValue())).intValue();
+        tripDataService.getTripData().setTemperature(value);
         nextScene(actionEvent, "fall");
     }
 }

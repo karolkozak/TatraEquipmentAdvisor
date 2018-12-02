@@ -7,29 +7,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.ClimbingController">
-   <children>
-      <Label layoutX="25.0" layoutY="28.0" text="TEA">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="33.0" layoutY="105.0" text="Wspinaczka podczas trasy:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-       <Button id="next" fx:id="nextButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleClimbingAction" text="Dalej" />
-       <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">
-           <font>
-               <Font size="9.0" />
-           </font>
-       </Label>
-      <RadioButton fx:id="climbingTrue" layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="tak">
-         <toggleGroup>
-            <ToggleGroup fx:id="climbing" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="climbingFalse" layoutX="55.0" layoutY="183.0" mnemonicParsing="false" text="nie" toggleGroup="$climbing" />
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.ClimbingController">
+    <children>
+        <Label layoutX="25.0" layoutY="28.0" text="TEA">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="105.0" text="Wspinaczka podczas trasy:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <RadioButton fx:id="climbingTrue" layoutX="55.0" layoutY="142.0" mnemonicParsing="false" text="tak">
+            <toggleGroup>
+                <ToggleGroup fx:id="climbing"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="climbingFalse" layoutX="55.0" layoutY="183.0" mnemonicParsing="false" text="nie"
+                     toggleGroup="$climbing"/>
+        <Button id="next" fx:id="nextButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false"
+                onAction="#handleClimbingAction" text="Dalej"/>
+        <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">
+            <font>
+                <Font size="9.0"/>
+            </font>
+        </Label>
+    </children>
 </AnchorPane>

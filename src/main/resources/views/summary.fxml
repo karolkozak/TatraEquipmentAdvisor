@@ -2,26 +2,103 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.SummaryController">
-   <children>
-      <Label layoutX="25.0" layoutY="28.0" text="TEA">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="33.0" layoutY="105.0" text="Podsumowanie:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-       <Button id="next" fx:id="getResultButton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSummaryAction" text="Pokaż potrzebny sprzęt" />
-       <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">
-           <font>
-               <Font size="9.0" />
-           </font>
-       </Label>
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tea.controllers.SummaryController">
+    <children>
+        <Label layoutX="25.0" layoutY="28.0" text="TEA">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="105.0" text="Podsumowanie:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="62.0" layoutY="134.0" text="Region">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="mountainChain" layoutX="300.0" layoutY="134.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="150.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="154.0" text="Poziom">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="mountainLevel" layoutX="300.0" layoutY="154.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="170.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="174.0" text="Pora roku">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="season" layoutX="300.0" layoutY="174.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="190.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="194.0" text="Temperatura">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="temperature" layoutX="300.0" layoutY="194.0" text="val"/>
+        <Label alignment="CENTER" layoutX="396.0" layoutY="194.0" text="°C"/>
+        <Separator layoutX="31.0" layoutY="210.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="214.0" text="Opady">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="fall" layoutX="300.0" layoutY="214.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="230.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="234.0" text="Ilość śniegu">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="snowAmount" layoutX="300.0" layoutY="234.0" text="val"/>
+        <Label layoutX="394.0" layoutY="234.0" text="cm"/>
+        <Separator layoutX="31.0" layoutY="250.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="254.0" text="Stopień zagrożenia lawinowego">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="degreeOfAvalanche" layoutX="300.0" layoutY="254.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="270.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="274.0" text="Godzina startu">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="startHour" layoutX="300.0" layoutY="274.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="290.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="294.0" text="Czas trwania wycieczki">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="trailwayDuration" layoutX="300.0" layoutY="294.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="310.0" prefWidth="400.0"/>
+        <Label layoutX="62.0" layoutY="314.0" text="Wspinaczka">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label fx:id="climbing" layoutX="300.0" layoutY="314.0" text="val"/>
+        <Separator layoutX="31.0" layoutY="330.0" prefWidth="400.0"/>
+
+        <Button id="next" fx:id="getResultButton" layoutX="434.0" layoutY="336.0" mnemonicParsing="false"
+                onAction="#handleSummaryAction" text="Pokaż potrzebny sprzęt"/>
+        <Label layoutX="324.0" layoutY="373.0" text="Tatra Equipment Advisor, Powered by Karol Kozak, Jakub Piekarz">
+            <font>
+                <Font size="9.0"/>
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
