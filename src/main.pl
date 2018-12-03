@@ -318,14 +318,15 @@ drukuj([]).
 drukuj( [X|Y] ):- write('- '), write(X), writeln(','), drukuj(Y).
 
 co_zabrac(Z) :-
-    setof(X, zabierz(X), Z).
-	%writeln('Zabierz:'), drukuj(Z),
-	%wyczysc_pamiec.
+    setof(X, zabierz(X), Z),
+	writeln('Zabierz:'), drukuj(Z),
+	wyczysc_pamiec.
 
 co_zabrac(_) :- write('Nie jestem w stanie odgadnac co masz zabrac w gory.'),
             wyczysc_pamiec.
 
-/* cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
+/*
+ * cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
  * godzina wymarszu, czas trwania
  */
 wykonaj(A, B, C, D, E, F, G, H, I, J, Z) :-

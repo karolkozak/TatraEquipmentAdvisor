@@ -1,5 +1,6 @@
 package com.tea.controllers;
 
+import com.tea.models.EquipmentProposal;
 import com.tea.services.TatraEquipmentAdvisorConnector;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +12,10 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 @Component
 public class EquipmentProposalController extends AbstractSceneController implements Initializable {
@@ -26,10 +30,9 @@ public class EquipmentProposalController extends AbstractSceneController impleme
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println("Equipment proposal view");
-        equipmentProposal.getItems().addAll("One", "Two", "Three");
-        // TODO: fetch equipment proposal and fill the list view
-//        EquipmentProposal equipmentProposal = tatraEquipmentAdvisorConnector.getEquipmentProposal();
-        String nene = "enne";
+        EquipmentProposal nene = tatraEquipmentAdvisorConnector.getEquipmentProposal();
+        List<String> list = Arrays.stream(nene.getProposal()).map(Object::toString).collect(Collectors.toList());
+        equipmentProposal.getItems().addAll(list);
     }
 
     @FXML
