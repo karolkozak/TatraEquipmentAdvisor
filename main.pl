@@ -311,23 +311,23 @@ zmrok() :- xstart(X),
 
 wyczysc_pamiec :- retractall(xfakty(_,_)),
     retractall(xstart(_)),
-    retractall(xtrasa(_)),
-    read(_).
+    retractall(xtrasa(_)).
+    %read(_).
 
 drukuj([]).
 drukuj( [X|Y] ):- write('- '), write(X), writeln(','), drukuj(Y).
 
-co_zabrac() :- 
+co_zabrac(Z) :- 
     setof(X, zabierz(X), Z),
-	writeln('Zabierz:'), drukuj(Z),
+	%writeln('Zabierz:'), drukuj(Z),
     wyczysc_pamiec.
 
-co_zabrac() :- write('Nie jestem w stanie odgadnac co masz zabrac w gory.'),
+co_zabrac(_) :- write('Nie jestem w stanie odgadnac co masz zabrac w gory.'),
             wyczysc_pamiec.
 
 /* cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
  * godzina wymarszu, czas trwania */
-wykonaj(A, B, C, D, E, F, G, H, I, J) :-
+wykonaj(A, B, C, D, E, F, G, H, I, J, Z) :-
     pamietaj(cel_wyprawy, A),
     pamietaj(region, B),
     pamietaj(pora_roku, C),
@@ -338,6 +338,6 @@ wykonaj(A, B, C, D, E, F, G, H, I, J) :-
     pamietaj(wspinaczka, H),
     pamietaj_start(I),
     pamietaj_trase(J),
-    co_zabrac.
+    co_zabrac(Z).
 
-test() :- wykonaj(turnie, wysokie, zima, brak, 10, 0, 0, nie, 8, 9).
+test() :- wykonaj(turnie, wysokie, zima, brak, 10, 0, 0, nie, 8, 9, _).
