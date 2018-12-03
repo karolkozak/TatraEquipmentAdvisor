@@ -21,7 +21,9 @@ public class App extends Application {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(App.class);
         context = builder.run(getParameters().getRaw().toArray(new String[0]));
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../views/start.fxml"));
+//        TatraEquipmentAdvisorJplConnector.prolog();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../views/summary.fxml"));
         loader.setControllerFactory(context::getBean);
         root = loader.load();
     }
