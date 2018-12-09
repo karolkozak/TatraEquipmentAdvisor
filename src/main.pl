@@ -1,11 +1,12 @@
 :- dynamic
     xfakty/2,
     xstart/1,
-    xtrasa/1.
+    xtrasa/1,
+    xtemperatura/1.
 
 zabierz(buty_wysokie) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie).
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]).
 	/* pora roku: dowolna 
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -15,57 +16,57 @@ zabierz(buty_wysokie) :-
 	 * zmrok: dowolnie */
 zabierz(buty_wysokie) :-
 	fakty(cel_wyprawy, regiel_dolny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	fakty(pora_roku, zima),
 	/* opady: dowolne */
-	fakty_alternatywa(temperatura, bardzo_zimno, lodowato).
+	fakty_alternatywa(temperatura, [bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(buty_niskie) :-
 	fakty(cel_wyprawy, regiel_dolny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, lato, jesien),
-	fakty_alternatywa(opady, deszcz, mgla, brak),
-	fakty_alternatywa(temperatura, goraca, cieplo, chlodno).
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, lato, jesien]),
+	fakty_alternatywa(opady, [deszcz, mgla, brak]),
+	fakty_alternatywa(temperatura, [goraca, cieplo, chlodno]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(kurtka_lekka) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, lato, jesien),
-	fakty_alternatywa(opady, deszcz, mgla, brak),
-	fakty_alternatywa(temperatura, goraca, cieplo, chlodno).
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, lato, jesien]),
+	fakty_alternatywa(opady, [deszcz, mgla, brak]),
+	fakty_alternatywa(temperatura, [goraca, cieplo, chlodno]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(kurtka_zimowa) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne */
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato).
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(odziez_termiczna) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne */
-	fakty_alternatywa(temperatura, chlodno, zimno, bardzo_zimno, lodowato).
+	fakty_alternatywa(temperatura, [chlodno, zimno, bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(polar_bluza) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie).
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]).
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -74,17 +75,17 @@ zabierz(polar_bluza) :-
 	 * zmrok: dowolnie */
 zabierz(rekawiczki) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne */
-	fakty_alternatywa(temperatura, chlodno, zimno, bardzo_zimno, lodowato).
+	fakty_alternatywa(temperatura, [chlodno, zimno, bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	 * stan lawionowy: dowolny
 	 * wspinaczka: dowolnie
 	 * zmrok: dowolnie */
 zabierz(bandana) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie).
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]).
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -94,7 +95,7 @@ zabierz(bandana) :-
 	 * zmrok: dowolnie */
 zabierz(lina) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -104,7 +105,7 @@ zabierz(lina) :-
 	/* zmrok: dowolnie */
 zabierz(uprzaz) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -114,7 +115,7 @@ zabierz(uprzaz) :-
 	/* zmrok: dowolnie */
 zabierz(kask) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -124,7 +125,7 @@ zabierz(kask) :-
 	/* zmrok: dowolnie */
 zabierz(magnezja) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -134,7 +135,7 @@ zabierz(magnezja) :-
 	/* zmrok: dowolnie */
 zabierz(karabinki) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -144,7 +145,7 @@ zabierz(karabinki) :-
 	/* zmrok: dowolnie */
 zabierz(bloczki) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
      * temperatura: dowolna
@@ -154,7 +155,7 @@ zabierz(bloczki) :-
 	/* zmrok: dowolnie */
 zabierz(haki) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -164,7 +165,7 @@ zabierz(haki) :-
 	/* zmrok: dowolnie */
 zabierz(petle) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -174,7 +175,7 @@ zabierz(petle) :-
 	/* zmrok: dowolnie */
 zabierz(latarka) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -184,7 +185,7 @@ zabierz(latarka) :-
 	zmrok().
 zabierz(czolowka) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -194,7 +195,7 @@ zabierz(czolowka) :-
 	zmrok().
 zabierz(spiwor) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -204,7 +205,7 @@ zabierz(spiwor) :-
 	zmrok().
 zabierz(kije_trekingowe) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -213,30 +214,30 @@ zabierz(kije_trekingowe) :-
 	fakty(wspinaczka, nie).
 	/* zmrok: dowolnie */
 zabierz(saperka) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne */
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato),
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]),
 	/* snieg: dowolnie */
-	fakty_alternatywa(st_lawinowy, 3, 4, 5).
+	fakty_alternatywa(st_lawinowy, [3, 4, 5]).
 	/* wspinaczka: dowolnie
 	zmrok: dowolnie */
 zabierz(nozyk).
 zabierz(mapa).
 zabierz(raki) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal, pietro_kosodrzewiny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal, pietro_kosodrzewiny]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna */
-	fakty_alternatywa(opady, snieg, deszcz),
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato).
+	fakty_alternatywa(opady, [snieg, deszcz]),
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	stan lawionowy: dowolny
 	wspinaczka: dowolnie
 	zmrok: dowolnie */
 zabierz(czekan) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
 	/* pora roku: dowolna
 	 * opady: dowolne
 	 * temperatura: dowolna
@@ -245,60 +246,65 @@ zabierz(czekan) :-
 	fakty(wspinaczka, tak).
 	/* zmrok: dowolnie */
 zabierz(czekan) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, jesien, zima),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, jesien, zima]),
 	/* opady: dowolne */
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato),
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]),
 	/* snieg: dowolnie */
-	fakty_alternatywa(st_lawinowy, 2, 3, 4, 5),
+	fakty_alternatywa(st_lawinowy, [2, 3, 4, 5]),
 	fakty(wspinaczka, nie).
 	/* zmrok: dowolnie */
 zabierz(okulary).
 zabierz(rakiety_sniezne) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, jesien, zima),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, jesien, zima]),
 	/* opady: dowolne */
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato),
-	fakty_alternatywa(snieg, 4, 5).
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]),
+	fakty_alternatywa(snieg, [4, 5]).
 	/* stan lawionowy: dowolny
 	wspinaczka: dowolnie
 	zmrok: dowolnie */
 zabierz(ogrzewacz) :-
 	/* cel wyprawy: dowolny */
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, jesien, zima),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, jesien, zima]),
 	/* opady: dowolne */
-	fakty_alternatywa(temperatura, bardzo_zimno, lodowato).
+	fakty_alternatywa(temperatura, [bardzo_zimno, lodowato]).
 	/* snieg: dowolnie
 	stan lawionowy: dowolny
 	wspinaczka: dowolnie
 	zmrok: dowolnie */
 zabierz(detektor_lawinowy) :-
-	fakty_alternatywa(cel_wyprawy, turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny),
-	fakty_alternatywa(region, zachodnie, wysokie, bielskie),
-	fakty_alternatywa(pora_roku, wiosna, jesien, zima),
+	fakty_alternatywa(cel_wyprawy, [turnie, pietro_hal, pietro_kosodrzewiny, regiel_gorny]),
+	fakty_alternatywa(region, [zachodnie, wysokie, bielskie]),
+	fakty_alternatywa(pora_roku, [wiosna, jesien, zima]),
 	/* opady: dowolne */
-	fakty_alternatywa(temperatura, zimno, bardzo_zimno, lodowato),
+	fakty_alternatywa(temperatura, [zimno, bardzo_zimno, lodowato]),
 	/* snieg: dowolnie */
-	fakty_alternatywa(st_lawinowy, 2, 3, 4, 5).
+	fakty_alternatywa(st_lawinowy, [2, 3, 4, 5]).
 	/* wspinaczka: dowolnie
 	zmrok: dowolnie */
 
-fakty(X,Y) :- xfakty(X,Y).
+fakty_alternatywa(X, [A|B]) :- fakty(X,A); fakty_alternatywa(X, B).
 
-fakty_alternatywa(X,A,B) :- (fakty(X,A); fakty(X,B)).
-fakty_alternatywa(X,A,B,C) :- (fakty(X,A); fakty(X,B); fakty(X,C)).
-fakty_alternatywa(X,A,B,C,D) :- (fakty(X,A); fakty(X,B); fakty(X,C); fakty(X,D)).
+fakty(X,Y) :- xfakty(X,Y).
+fakty(temperatura, goraco) :- xtemperatura(T),
+    between(30,100,T).
+fakty(temperatura, cieplo) :- xtemperatura(T),
+    between(20,30,T).
+fakty(temperatura, chlodno) :- xtemperatura(T),
+    between(10,20,T).
+fakty(temperatura, zimno) :- xtemperatura(T),
+    between(0,10,T).
+fakty(temperatura, bardzo_zimno) :- xtemperatura(T),
+    between(-10,0,T).
+fakty(temperatura, lodowato) :- xtemperatura(T),
+    between(-100,-10,T).
 
 pamietaj(X,Y) :- assertz(xfakty(X,Y)).
-pamietaj_temperature(X) :- ((between(30,100,X) ->  assertz(xfakty(temperatura, goraco)));
-                    (between(20,30,X) ->  assertz(xfakty(temperatura, cieplo)));
-                    (between(10,20,X) ->  assertz(xfakty(temperatura, chlodno)));
-                    (between(0,10,X) ->  assertz(xfakty(temperatura, zimno)));
-                    (between(-10,0,X) ->  assertz(xfakty(temperatura, bardzo_zimno)));
-                    (between(-100,-10,X) ->  assertz(xfakty(temperatura, lodowato)))).
+pamietaj_temperature(X) :- assertz(xtemperatura(X)).
 pamietaj_start(X) :- assertz(xstart(X)).
 pamietaj_trase(X) :- assertz(xtrasa(X)).
 
@@ -311,24 +317,19 @@ zmrok() :- xstart(X),
 
 wyczysc_pamiec :- retractall(xfakty(_,_)),
     retractall(xstart(_)),
-    retractall(xtrasa(_)).
-    %read(_).
+    retractall(xtrasa(_)),
+    retractall(xtemperatura(_)).
 
-drukuj([]).
-drukuj( [X|Y] ):- write('- '), write(X), writeln(','), drukuj(Y).
-
-co_zabrac(Z) :-
+co_zabrac(Z) :- 
     setof(X, zabierz(X), Z),
-	writeln('Zabierz:'), drukuj(Z),
-	wyczysc_pamiec.
+	%writeln('Zabierz:'), drukuj(Z),
+    wyczysc_pamiec.
 
 co_zabrac(_) :- write('Nie jestem w stanie odgadnac co masz zabrac w gory.'),
             wyczysc_pamiec.
 
-/*
- * cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
- * godzina wymarszu, czas trwania
- */
+/* cel wyprawy, region, pora roku, opady, temperatura, snieg, stan lawionowy, wspinaczka,
+ * godzina wymarszu, czas trwania */
 wykonaj(A, B, C, D, E, F, G, H, I, J, Z) :-
     pamietaj(cel_wyprawy, A),
     pamietaj(region, B),
